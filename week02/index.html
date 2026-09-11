@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 삽입</title>
+</head>
+<body>
+    <h3>이미지 삽입연습</h3>
+    <hr>
+    <img src="./media/한성 캐릭터.png" 
+     width="800"
+     height="500"
+     alt="한성대 캐릭터">
+        <!-- 윈도우즈 절대 경로가 아닌 상대 경로로 줘야한다 -->
+        <!-- 파일명의 주소가 아니라 .현재 경로의 주소 ./ 를 상대적으로 줘야한다-->
+        <!-- 그래야 웹으로 올렸을땐 내 pc의 주소가 아니라 폴더에서 찾음 -->
+
+<br>
+    <h1>라면을 끓이는 방법</h1>
+<ol type ="A">
+    <li> 물을 끓인다. </li>
+    <li> 라면을 넣는다. </li>
+    <li> 스프를 넣는다. </li>
+    <li> 계란을 넣는다. </li>
+    <li> 팔팔 끓인다. </li>
+    <li> 맛있게 먹는다. </li>
+    <li> 라면은 맛있는데,적당히 먹자..나트륨이....; </li>
+</ol>
+<!-- ol은 순서있는 리스트, ul은 순서없는 리스트 -->
+    
+<ul>
+    <li>교정을 끝내면 먹고 싶은 목록</li>
+    <li>피자</li>
+    <li>햄버거</li>
+    <li>과자</li>
+    <li>스파게티</li>
+    <li>다양한 음식들을 입안에 한껏 가득넣고 먹고싶다</li>
+</ul>
+
+<br><br>
+
+<!-- 리스트를 중첩 시켜보자 -->
+
+<ul>
+    <li>교정을 끝내면 먹고 싶은 음식들 목록</li>
+        <ul>
+            <li>피자</li>
+            <li>햄버거</li>
+            <li>과자</li>
+            <li>스파게티</li>          
+        </ul>
+        <br>
+    <li>파스타 만드는 방법</li>
+        <ul>
+            <li>물을 끓인다</li>
+            <li>물에 소금을 넣어 간수로 만든다</li>
+            <li>어느정도 물이 끓었을때 500원정도(1인분)의 면을 넣는다</li>
+            <li>5~10분 동안 면이 눌러 붙지 않게 몇번씩 휘저어 준다</li>
+            <li>면을 한가닥 건져서 먹어보고 마음에 들면 건져낸다</li>
+            <li>끊인물인 간수는 버리지 않는다.(간 맞추는용도)</li>
+            <li>시중에 파는 파스타 소스를 넣고 간수를 넣어 간을 맞춘다</li>
+            <li>자기가 원하는 재료들을 미리 준비하고 섞는다</li>
+            <li>맛있게 먹는다!</li>
+        </ul>
+        <br>
+</ul>
+
+<!--정의 리스트를 만들어 보자-->
+
+<hr>
+<h2>웹의 종류</h2>
+<dl>
+    <dt><strong>Explore</strong>
+    <dd>인터넷 익스플로러(Internet Explorer)는 마이크로소프트가 개발한 웹 브라우저로, 2022년 6월 15일부로 공식 지원이 종료되었습니다.
+
+    <dt><strong>Microsoft Edge</strong>
+    <dd>마이크로소프트 엣지(Microsoft Edge)는 마이크로소프트가 개발한 크로미움(Chromium) 기반의 웹 브라우저입니다.<br>
+        인터넷 익스플로러의 후속으로 출시되었으며, 빠른 속도와 강력한 보안 기능을 제공합니다.
+</dl>
+
+<!--표를 만들어 보자-->
+<hr>
+<h1>표를 만들어 보자</h1>
+<br>
+<table border="1"> 
+    <caption>1학년 1학기 성적</caption>
+    <thead>
+        <tr><th>사고와 표현</th><th>네트워크 기초</th><th>파이썬 기초</th><th>인공지능 기초</th></tr>
+    </thead>
+    
+    <tfoot>
+        <tr><th>A+</th><th>A+</th><th>A+</th><th>A+</th></tr>
+    </tfoot>
+    
+    <tbody>
+        <th>90</th><th>95</th><th>92</th><th>90</th>
+    </tbody>
+</table>
+<h3 id = "first"> 첫번째 표지판</h3>
+지금 여기로 이동을 해야합니다
+<!-- 이미지를 가지는 표-->
+
+<hr>
+<h1>이미지를 가지는 표</h1>
+<br>
+<table> 
+    <caption>먹고 싶은 음식 목록</caption>
+    
+    <tbody>
+        <tr>
+            <td><img src ="./media/1.jpg"  width="300"height="300"></td>
+            <td><img src ="./media/2.jpg"  width="300"height="300"></td>
+            <td><img src ="./media/3.jpg"  width="300"height="300"></td>
+        </tr>
+    </tbody>
+</table>
+<br><hr>
+
+<ul>
+        <li>하이퍼링크를 연결해보자</li>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">구글</a></li>
+        <li><a href="https://www.naver.com" target="_blank">네이버</a></li>
+    </ul>
+    <br>
+        <li>이미지를 통한 링크를 연결해보자</li>
+    <ul>
+        
+        <li><a href="https://www.google.com" target="_top">
+            <img src ="./media/Google.svg" width="100" height="100" alt="구글">
+        </a></li>
+        <!-- 리스트를 중첩 시켜봤고 타켓 블랭크로 새 윈도우탭에서 띄운다-->
+        <li><a href="http://www.naver.com" target="_blank">
+            <img src ="./media/naver.jpg" width="50" height="50" alt="네이버">
+        </a></li>
+    </ul>
+</ul>
+
+<hr><br>
+
+<!-- 문서의 특정 위치로 보내주는 걸 앵커라고 함 -->
+
+<a href = "#first">1 첫번째 표지판</a>
+안녕하세요 지금은 앵커를 시험해보고 있습니다<br>
+그래서 저쪽 위치로 이동하게 되는걸까요?<br>
+정확히 알아보기 위해 글을 길게 쓰고 그리고 나서<br>
+위로 다시 이동하는지 확인해봅시다<br>
+
+<hr><br>
+
+<ul>
+    <li><a href = "./media/1.jpg" download> 떡뽁이</a></li>
+    <li><a href = "./media/마들렌.jpeg" download> 마들렌</a></li>
+    <li><a href = "./media/다쿠아즈.jpeg" download> 다쿠아즈</a></li>
+</ul>
+
+<hr><br>
+
+<iframe src="./media/마들렌.jpeg" width="500" height="500"></iframe>
+<iframe src="./media/다쿠아즈.jpeg" width="500" height="500"></iframe>
+
+<hr><br>
+
+<iframe src="iframe1.html" name ="left"  width="100" height="500"></iframe>
+<iframe src="iframe2.html" name ="right" width="500" height="500"></iframe>
+
+<hr><br>
+
+<iframe src="iframe1.html" name ="left"  width="200" height="500"></iframe>
+<iframe src="iframe2.html" name ="right" width="500" height="500"></iframe>
+
+<hr><br>
+
+<!-- src를 써서 비디오와 오디오 둘다 넣어줄수 있음 어렵진않음 -->
+
+
+</body>
+</html>
